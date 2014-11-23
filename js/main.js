@@ -1,29 +1,29 @@
 $(document).ready(function() {
 
-	/* Navigation Functions */
+  /* Navigation Functions */
 
-	if ($(window).scrollTop()===0){
-		$('#main-nav').removeClass('scrolled');
-	}
-	else{
-		$('#main-nav').addClass('scrolled');
-	}
+  if ($(window).scrollTop()===0){
+    $('nav').removeClass('scrolled');
+  }
+  else{
+    $('nav').addClass('scrolled');
+  }
 
-	$(window).scroll(function(){
-		if ($(window).scrollTop()===0){
-			$('#main-nav').removeClass('scrolled');
-		}
-		else{
-			$('#main-nav').addClass('scrolled');
-		}
-	});
+  $(window).scroll(function(){
+    if ($(window).scrollTop()===0){
+      $('nav').removeClass('scrolled');
+    }
+    else{
+      $('nav').addClass('scrolled');
+    }
+  });
 
   /* ScrollTo Links */
 
   $('a.scrollto').click(function(e){
     // TODO Fix scrolling on small devices
 
-    $('html,body').scrollTo(this.hash, this.hash, {gap:{y:-130},animation:  {easing: 'easeInOutCubic', duration: 1600}});
+    $('html,body').scrollTo(this.hash, this.hash, {gap:{y:-100},animation:  {easing: 'easeInOutCubic', duration: 1600}});
     e.preventDefault();
 
     if ($('.navbar-collapse').hasClass('in')){
