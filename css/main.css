@@ -6,10 +6,10 @@ body {
   padding-bottom: 20px;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
+h1,
+h2,
+h3,
+h4,
 h5 {
   font-family: 'Raleway', sans-serif;
 }
@@ -166,6 +166,7 @@ canvas {
 }
 
 #main-header nav .navbar-nav {
+  margin-right: 70px;
   float: none;
   text-align: center;
 }
@@ -239,6 +240,7 @@ canvas {
 }
 
 #main-header .me {
+  text-align: center;
   margin-bottom: 0;
   padding-top: 60px;
 }
@@ -250,8 +252,8 @@ canvas {
   }
 }
 
-#main-header .me img {
-  margin-bottom: 10px;
+#main-header .me .img-responsive {
+  margin: 0 auto 10px auto;
 }
 
 #main-header .me h4 {
@@ -344,30 +346,12 @@ canvas {
 /* Contact */
 
 #contact {
-  color: white;
-  text-align: left;
   margin-bottom: 20px;
 }
 
-#contact h1 {
-  background-color: #fff;
-}
-
-#contact div.row {
-  background-color: #02779e;
-}
-
-#contact h3 {
-  font-size: 28px;
-  color: #fff;
-}
-
-#contact p {
-  color: #fff;
-  font-size: 18px;
-}
-
 #contact .contact-form {
+  color: #fff;
+  background-color: #02779e;
   padding-top: 20px;
   margin: 0px;
 }
